@@ -49,15 +49,17 @@ header nav ul li a:hover {
 }
 
 .next-era {
-  background-color: #f0f0f0; /* Light background for the section */
   padding: 30px;
   text-align: center;
 }
 
 .next-era h2 {
-  color: teal; /* Apply teal color to the heading text */
+  color: black; /* Apply teal color to the heading text */
 }
 
+.next-era span{
+  color:rgb(9 190 190);;
+}
 .next-era .image-grid {
   display: flex;
   justify-content: center;
@@ -70,6 +72,7 @@ header nav ul li a:hover {
   height: auto;
   margin-left: 10px
 }
+
 
 .next-era button {
   margin-top: 20px;
@@ -87,10 +90,12 @@ header nav ul li a:hover {
 }
 
 .contact {
-  padding: 50px;
+  padding: 30px;
   color: white;
   margin-left: 200px;
+  margin-top: 60px;
   margin-right: 200px;
+  margin-bottom: 60px;
   background-color: rgb(57, 154, 245);
 }
 .contact-info, .form-container {
@@ -111,6 +116,50 @@ header nav ul li a:hover {
   gap: 10px;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px; /* Adjusts the spacing between elements */
+}
+
+form label {
+  margin-right: 5px; /* Adds a small space between the label and input */
+}
+
+form input,
+form textarea,
+form button {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  width: auto;
+  display: inline-block;
+}
+
+form textarea {
+  vertical-align: middle; /* Ensures textarea aligns with input fields */
+}
+
+form button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px; /* Adds a little space before the submit button */
+}
+
+form input:focus,
+form textarea:focus {
+  border-bottom: 1px solid #007bff; /* Changes border color on focus */
+  outline: none;
+}
+
+.new-era-logo{
+  margin-left: 350px;
+}
 .footer-links {
   display: flex;
   justify-content: center;

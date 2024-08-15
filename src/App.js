@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'; // Ensure CSS file is correctly set up
 import images from './img/img2.webp'; // Import the image
 import newEraImage from './img/new.jpeg'; 
-
+import Logo from './img/logo.jpeg'; 
 const App = () => {
   return (
     <div className="app">
@@ -52,7 +52,7 @@ const HeroSection = () => {
 const NextEraSection = () => {
   return (
     <section className="next-era">
-      <h2 style={{ color: 'teal' }}>Next era of possibilities</h2> {/* Teal-colored text */}
+      <h2><span>Next era</span> of possibilities</h2> {/* Teal-colored text */}
       <img src={newEraImage} alt="New Era" className="new-era-image" /> {/* New image */}
       <h3>Embracing digital transformation that goes beyond products</h3>
       <p>Our pillars of Technology Development, System Integration, and Process Engineering drive Innovation, Streaming Operations, and ensures log-term success in a dynamic market</p>
@@ -60,7 +60,6 @@ const NextEraSection = () => {
     </section>
   );
 };
-
 const ContactForm = () => {
   return (
     <section className="contact">
@@ -99,25 +98,26 @@ const ContactForm = () => {
 const Footer = () => {
   return (
     <footer>
+    <img src={Logo} alt="logo" className="new-era-logo" /> 
       <div className="footer-links">
-        <div>Applicants
+        <div><h4>Applicants</h4>
         <div>Apparel</div>
         <div>Automotive</div>
         <div>Filtration</div>
         <div>Customised Solutions</div>
         </div>
-        <div>Company
+        <div><h4>Company</h4>
         <div>Innovation</div>
         <div>Global Competency</div>
         <div>About Us</div>
         <div>Contact Us</div>
         </div>
-        <div>More
+        <div><h4>More</h4>
         <div>Careers</div>
         <div>Privacy Policy</div>
         <div>Terms and Conditions</div>
         </div>
-        <div>Follow Us
+        <div><h4>Follow Us</h4>
         <div>Twitter</div>
         <div>Linkedin</div>
         <div>Instagram</div>
