@@ -1,145 +1,127 @@
-/* App.css */
-
 .app {
   font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #fffefe; /* Dark background for header */
+  background-color: #fff;
   padding: 10px;
 }
 
 header nav {
   display: flex;
-  justify-content: center; /* Center the navigation bar */
+  justify-content: center;
 }
 
 header nav ul {
-  list-style: none; /* Remove default list styling */
-  margin: 0;
+  list-style: none;
+  display: flex;
   padding: 0;
-  display: flex; /* Arrange list items horizontally */
+  margin: 0;
 }
 
 header nav ul li {
-  margin: 0 15px; /* Space between navigation items */
+  margin: 0 15px;
 }
 
 header nav ul li a {
-  color: black; /* Link text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 16px; /* Adjust font size */
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 header nav ul li a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
+/* Hero Section */
 .hero {
-  background-image: url('./img/img2.webp');
   background-size: cover;
   background-position: center;
   color: white;
   padding: 150px;
   text-align: center;
 }
-.btn {
-   /* Adjust the value as needed */
-  margin-left: 10%;
-}
 
+/* Next Era Section */
 .next-era {
   padding: 30px;
   text-align: center;
 }
 
-.next-era h2 {
-  color: black; /* Apply teal color to the heading text */
-}
-
-.next-era span{
-  color:rgb(9 190 190);;
-}
-.next-era .image-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between images if there are multiple */
-  margin-bottom: 20px; /* Space between image and button */
+.next-era h2 span {
+  color: rgb(9, 190, 190);
 }
 
 .next-era img {
   max-width: 100%;
   height: auto;
-  margin-left: 10px
+  margin: 20px 0;
 }
 
-
-.next-era button {
-  margin-top: 20px;
-  margin-left: auto; /* Space above the button, if needed */
-  padding: 10px 20px; /* Padding for the button */
-  background-color:  rgb(18, 247, 247); /* Button background color */
-  color:black; /* Button text color */
-  border: none; /* Remove button border */
-  border-radius: 23px; /* Rounded corners for the button */
-  cursor: pointer; /* Change cursor to pointer on hover */
+.next-era .btn {
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: rgb(18, 247, 247);
+  color: black;
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
 }
 
-.next-era button:hover {
-  background-color: #e0e0e0; /* Change background color on hover */
+.next-era .btn:hover {
+  background-color: #e0e0e0;
 }
 
+/* Contact Section */
 .contact {
-  padding: 30px;
-  color: white;
-  margin-left: 200px;
-  margin-top: 60px;
-  margin-right: 200px;
-  margin-bottom: 60px;
-  background-color: rgb(57, 154, 245);
-}
-.contact-info, .form-container {
-  flex: 1; /* Make both sections take equal width */
   padding: 20px;
-  background-color: rgb(57, 154, 245); /* Light background for better readability */
-  border-radius: 8px; /* Rounded corners for the sections */
+  margin: 60px 200px 60px;
+  background-color: rgb(57, 154, 245);
+  color: white;
 }
+
+.contact-info,
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(57, 154, 245);
+  border-radius: 8px;
+}
+
 .contact-sections {
   display: flex;
-  justify-content: space-between; /* Space between the two sections */
-  gap: 20px; /* Space between the sections */
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline;
+  flex-wrap: inherit;
   align-items: center;
-  gap: 10px; /* Adjusts the spacing between elements */
+  gap: 5px;
 }
-
-form label {
-  margin-right: 5px; /* Adds a small space between the label and input */
-}
-
 form input,
-form textarea,
-form button {
+form textarea {
   border: none;
   background: none;
   border-bottom: 1px solid #ccc;
-  padding: 5px;
-  width: auto;
-  display: inline-block;
+  gap: 0px;
+}
+form button {
+  margin-top: 10px;
+  border: white;
+  border-bottom: 1px solid #ccc;
+  border-radius: 30px;
 }
 
 form textarea {
-  vertical-align: middle; /* Ensures textarea aligns with input fields */
+  vertical-align: middle;
+}
+.sticky-section {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 10px;
 }
 
 form button {
@@ -148,21 +130,23 @@ form button {
   background-color: #007bff;
   color: #fff;
   border-radius: 3px;
-  margin-left: 10px; /* Adds a little space before the submit button */
+  margin-left: 10px;
 }
 
 form input:focus,
 form textarea:focus {
-  border-bottom: 1px solid #007bff; /* Changes border color on focus */
+  border-bottom: 1px solid #007bff;
   outline: none;
 }
 
-.new-era-logo{
-  margin-left: 350px;
-}
+/* Footer Section */
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 100px;
   padding: 20px;
+}
+
+.new-era-logo {
+  margin-left: 200px;
 }
