@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; // Ensure CSS file is correctly set up
-import images from './img/image.avif'; // Import the image
+import images from './img/img2.webp'; // Import the image
+import newEraImage from './img/new.jpeg'; 
 
 const App = () => {
   return (
@@ -51,12 +52,11 @@ const HeroSection = () => {
 const NextEraSection = () => {
   return (
     <section className="next-era">
-      <h2>Next era of possibilities</h2>
-      <div className="image-grid">
-        {/* <img src={images} alt="Next Era" /> */}
-        {/* Add more images and descriptions as needed */}
-      </div>
-      <button className='btn'>How Do We Innovate</button>
+      <h2 style={{ color: 'teal' }}>Next era of possibilities</h2> {/* Teal-colored text */}
+      <img src={newEraImage} alt="New Era" className="new-era-image" /> {/* New image */}
+      <h3>Embracing digital transformation that goes beyond products</h3>
+      <p>Our pillars of Technology Development, System Integration, and Process Engineering drive Innovation, Streaming Operations, and ensures log-term success in a dynamic market</p>
+     <div><button className="btn">How Do We Innovate</button> </div> {/* Button placed directly under the image */}
     </section>
   );
 };
