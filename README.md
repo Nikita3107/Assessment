@@ -1,3 +1,5 @@
+For this project, I implemented a website with scroll-triggered animations and dynamic content updates. I focused on creating a responsive design with inline underlined form fields for a clean user interface. Challenges included optimizing the animations for smooth performance and ensuring the dynamic content updated correctly without impacting user experience.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
