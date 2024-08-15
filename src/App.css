@@ -1,38 +1,113 @@
-.App {
+/* App.css */
+
+.app {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333; /* Dark background for header */
+  padding: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center; /* Center the navigation bar */
+}
+
+header nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange list items horizontally */
+}
+
+header nav ul li {
+  margin: 0 15px; /* Space between navigation items */
+}
+
+header nav ul li a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Adjust font size */
+}
+
+header nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.hero {
+  background-image: url('./img/image.avif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.next-era {
+  background-color: #f0f0f0; /* Light background for the section */
+  padding: 30px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.next-era h2 {
+  color: teal; /* Apply teal color to the heading text */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.next-era .image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between images if there are multiple */
+  margin-bottom: 20px; /* Space between image and button */
+}
+
+.next-era img {
+  max-width: 100%;
+  height: auto;
+}
+
+.next-era button {
+  margin-top: 20px; /* Space above the button, if needed */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: white; /* Button background color */
+  color: teal; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.next-era button:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.contact {
+  padding: 50px;
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(57, 154, 245);
+}
+.contact-info, .form-container {
+  flex: 1; /* Make both sections take equal width */
+  padding: 20px;
+  background-color: rgb(57, 154, 245); /* Light background for better readability */
+  border-radius: 8px; /* Rounded corners for the sections */
+}
+.contact-sections {
+  display: flex;
+  justify-content: space-between; /* Space between the two sections */
+  gap: 20px; /* Space between the sections */
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 20px;
+  padding: 20px;
 }
